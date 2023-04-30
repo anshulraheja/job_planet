@@ -59,13 +59,13 @@ const ListPage = () => {
   }, [handleScroll]);
 
   return (
-    <div className="listing-page">
-      <div className="company-card">
+    <div className="listing-page px-[19rem] py-8">
+      <div className="company-card flex w-full flex-wrap justify-around gap-8">
         {allRecruits.map((recruit: IRecruitData) => (
           <CompanyCard recruit={recruit} key={recruit?.id} />
         ))}
       </div>
-      {loading && <p>Loading...</p>}
+      {loading && <p className="text-center">Loading...</p>}
     </div>
   );
 };
