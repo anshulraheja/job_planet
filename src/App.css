@@ -1,42 +1,125 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.listing-page {
+  padding: 2rem 19rem;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.company-card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.card-container {
+  width: 294px;
+  /* height: 378px; */
+  background: #ffffff;
+  border: 1px solid #e5e6e9;
+  box-shadow: 0px 1px 4px rgba(30, 40, 58, 0.04);
+  border-radius: 12px;
+  position: relative;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.image-container {
+  width: 294px;
+  height: 180px;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image-container > img {
+  width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.bookmark {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 28px;
+  height: 28px;
+  background: #323438;
+  opacity: 0.4;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.card {
-  padding: 2em;
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
 }
-
-.read-the-docs {
-  color: #888;
+.title {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #323438;
+}
+.sub-title {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #85878c;
+}
+.line {
+  width: 254px;
+  height: 1px;
+  border: 1px solid #e5e6e9;
+}
+.company-info {
+  display: flex;
+  gap: 0.5rem;
+}
+.company-logo {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #e5e6e9;
+  border-radius: 4px;
+}
+.company-logo > img {
+  width: 100%;
+}
+.company-name {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #323438;
+}
+.grade-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grade {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #323438;
+}
+.grade-count {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #85878c;
+}
+.appeal {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #85878c;
+}
+.review,
+.reward {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #323438;
 }
