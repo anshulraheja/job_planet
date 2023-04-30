@@ -60,7 +60,7 @@ const ListPage = () => {
 
   return (
     <div className="listing-page px-[19rem] py-8">
-      <div className="company-card flex w-full flex-wrap justify-around gap-8">
+      <div className="company-card flex w-full flex-wrap justify-around gap-4">
         {allRecruits.map((recruit: IRecruitData) => (
           <CompanyCard recruit={recruit} key={recruit?.id} />
         ))}

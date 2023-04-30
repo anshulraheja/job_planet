@@ -1,7 +1,6 @@
 import React from 'react';
 import { IRecruitData } from '../ListingPage/types';
 import { BookmarkOff, BookmarkOn, StarIcon } from '../../assets';
-
 interface IPropsCompanyCard {
   recruit: IRecruitData;
 }
@@ -17,7 +16,7 @@ const CompanyCard: React.FC<IPropsCompanyCard> = (
           alt="bookmark"
         />
       </div>
-      <div className="h-48 ">
+      <div className="h-44">
         <img
           className="h-full w-full rounded-lg object-cover"
           src={recruit?.image}
@@ -25,7 +24,7 @@ const CompanyCard: React.FC<IPropsCompanyCard> = (
         />
       </div>
       <div className="flex flex-col gap-2 p-4">
-        <div className="text-lg font-bold text-gray-700">
+        <div className="title truncate text-base font-bold text-gray-700">
           {recruit?.title}
         </div>
         <div className="text-sm font-normal text-gray-500 ">
@@ -63,7 +62,7 @@ const CompanyCard: React.FC<IPropsCompanyCard> = (
         </div>
         <div className="border border-gray-300"></div>
         <div>
-          <div className="text-sm font-bold text-gray-700">
+          <div className="truncate text-sm font-bold text-gray-700">
             {recruit?.review}: {recruit?.reward}
           </div>
         </div>
